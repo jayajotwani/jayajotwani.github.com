@@ -1,2 +1,2 @@
-# jayajotwani.github.com
+# jayajotwani.github.io
 My personal website
