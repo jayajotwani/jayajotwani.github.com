@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.flex-container {
+    display: flex;
+    background-color: darkblue;
+    background-image: url(background4.jpg);
+    height: 80px;
+    margin: 0;
+    /*padding: 5px;*/
+    justify-content: space-between;
+}
+.flex-container nav {
+    /*margin-top: 25px;
+    margin-right: 30px;*/
+    height:100%;
+    
+}
+
+nav a{
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 30px;
+    display: block;
+    /*height: 100%;*/
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav a:hover {
+    background-color: #1a53ff;
+}
+.logo img {
+    margin:0;
+    width: 80px;
+}
+.profile-cover {
+    display: flex;
+    height: 80px;
+    background-color:red;
+    margin: 0;
+    /*padding: 5px;*/
+    justify-content: space-between;
+}
+.profile img {
+    margin:0;
+    height: 80px;
+    /*width:100%*/
+}
+
+.Flex-Hero-Header {
+    height: 500px;
+    background-color: darkblue;
+    background-image: url(background4.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Flex-Hero-Header div {
+    text-align: center;
+}
+
+.Flex-Hero-Header .greet {
+    font-size: 50px;
+    color: white;
+}
+
+.Flex-Hero-Header .tagline {
+    font-size: 20px;
+    color: tomato;
+}
+
+.photos {
+    background-color: #002db3;
+}
+
+.photos h4 {
+    font-size: 40px;
+    color:white;
+    
+    font-family: cursive;
+    font-style: italic;
+    text-align: center;
+    text-decoration: bold;
+    margin: 0%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 900px; */
+    margin: auto;
+    justify-content: space-around;
+}
+.gallery img {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.next {
+    text-align: right;
+}
+
+.next a {
+    background-color: whitesmoke;
+    padding: 5px;
+    color: #002db3;
+    font-size: 17px;
+    border-radius: 100px;
+    border: 1px solid whitesmoke;
+    font-weight: bold;
+    /*width: 150px;*/
+}
