@@ -1,3 +1,9 @@
+header {
+    display: flex;
+    height: 60px;
+    background-color: ivory;
+    justify-content: center;
+}
 .profile-cover {
     display: flex;
     height: 100%;

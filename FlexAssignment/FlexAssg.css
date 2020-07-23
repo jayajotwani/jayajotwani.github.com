@@ -3,47 +3,9 @@ body {
     padding: 0;
 }
 
-
-.flex-container {
-    display: flex;
-    background-color: darkblue;
-    background-image: url(background4.jpg);
-    height: 80px;
-    margin: 0;
-    /*padding: 5px;*/
-    justify-content: space-between;
-}
-.flex-container nav {
-    /*margin-top: 25px;
-    margin-right: 30px;*/
-    height:100%;
-    
-}
-
-nav a{
-    color: white;
-    font-size: 30px;
-    text-decoration: none;
-    margin-right: 30px;
-    display: block;
-    /*height: 100%;*/
-    float: left;
-    padding-top: 20px;
-    padding-bottom: 26px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-nav a:hover {
-    background-color: #1a53ff;
-}
-.logo img {
-    margin:0;
-    width: 80px;
-}
 .profile-cover {
     display: flex;
-    height: 80px;
+    height: 60px;
     background-color:red;
     margin: 0;
     /*padding: 5px;*/
@@ -51,15 +13,36 @@ nav a:hover {
 }
 .profile img {
     margin:0;
-    height: 80px;
+    height: 60px;
     /*width:100%*/
 }
 
+nav a{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    margin-right: 0px;
+    display: block;
+    /*height: 100%;*/
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+nav a:hover {
+    background-color: #627194;
+}
+
+
 .Flex-Hero-Header {
-    height: 500px;
-    background-color: darkblue;
-    background-image: url(background4.jpg);
     display: flex;
+    height: 500px;
+    margin: 0;
+/* background-image: url(background4.jpg);*/
+    background-color: rgb(41, 41, 41);
     justify-content: center;
     align-items: center;
 }
@@ -68,25 +51,30 @@ nav a:hover {
 }
 
 .Flex-Hero-Header .greet {
-    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
     color: white;
 }
 
 .Flex-Hero-Header .tagline {
-    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
     color: tomato;
 }
 
-.photos {
-    background-color: #002db3;
+.photos-title {
+    display: flex;
+    justify-content: center;
+    background-color: #627194;
 }
 
-.photos h4 {
+.photos-title h4 {
     font-size: 40px;
     color:white;
-    
+    padding: 10px;
     font-family: cursive;
     font-style: italic;
+    text-decoration-line: underline;
     text-align: center;
     text-decoration: bold;
     margin: 0%;
@@ -94,27 +82,207 @@ nav a:hover {
 
 .gallery {
     display: flex;
-    flex-wrap: wrap;
-    /* width: 900px; */
-    margin: auto;
     justify-content: space-around;
+    /*flex-wrap: wrap;*/
+    background-color: #627194;
 }
+.gallery section {
+    align-content: center;
+}
+.gallery table {
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    margin: 50px;  
+}
+
+.gallery table tr{
+    cellpadding: 20px;
+    align-items: center;
+}
+
+.gallery table td{
+    width: 33%;
+    margin:50px;
+    cellpadding: 50px;
+    align-items: center;
+}
+
 .gallery img {
     width: 300px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.image-caption p{
+    margin: 0px;
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    text-decoration: bold;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .next {
-    text-align: right;
+    display: flex;
+    justify-content: center;
+    background-color: #627194;
 }
 
 .next a {
-    background-color: whitesmoke;
-    padding: 5px;
-    color: #002db3;
-    font-size: 17px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    text-decoration: none;
     border-radius: 100px;
     border: 1px solid whitesmoke;
     font-weight: bold;
     /*width: 150px;*/
+}
+
+.Flex-contact {
+    display: flex;
+    height: 300px;
+    margin: 0;
+    background-color: rgb(41, 41, 41);
+    
+    justify-content: center;
+    align-items: center;
+}
+.Flex-contact div {
+    text-align: center;
+}
+
+.Flex-contact .contact-greet {
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.Flex-contact .contact-tagline {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    word-spacing: 2px;
+    color: white;
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+}
+
+.Flex-contact .social-media {
+    display: flex;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.Flex-contact table {
+    margin-top: 40px;
+}
+
+.Flex-contact table td{
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    align-items: center;    
+}
+
+.Flex-contact .social-media .facebook {
+       
+    
+}
+.Flex-contact .social-media .facebook:hover {
+    padding-top: 40;  
+    padding-bottom: 0;  
+
+}
+
+.Flex-contact .social-media .github {
+
+}
+
+.Flex-contact .social-media .github:hover {
+    padding-top: 40;  
+    padding-bottom: 0;  
+}
+
+.Flex-contact .social-media .twitter {
+
+}
+
+
+.Flex-contact .social-media .twitter:hover {
+    padding-top: 40;  
+    padding-bottom: 0;  
+}
+
+.Flex-contact .social-media .email {
+    
+}
+
+
+.Flex-contact .social-media .email:hover {
+    padding-top: 40;  
+    padding-bottom: 0;  
+}
+
+.Flex-contact .social-media .call {
+
+}
+
+.Flex-contact .social-media .call:hover {
+    padding-top: 40;  
+    padding-bottom: 0;  
+}
+
+.Flex-contact .social-media img {
+    height: 20px;
+}
+
+.Flex-contact hr{
+
+}
+.copyright {
+    display: flex;
+    height: 100px;
+    margin: 0;
+    background-color: rgb(41, 41, 41);
+    justify-content: space-evenly;
+    
+}    
+    
+.hr {
+    display: inline;
+    background-color: rgb(41, 41, 41);
+    margin: 0;
+    padding: 0;
+}   
+
+hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 2px solid red;
+    
+}
+
+.copyright .bottomline {
+    margin-top: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    align: center;
 }
