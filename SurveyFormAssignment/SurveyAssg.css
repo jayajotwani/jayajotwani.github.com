@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Poppins:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&family=Roboto&display=swap');
+
+body  {
+  margin: 0;
+     background-image: url(images/bg3.jpg);
+     background-attachment: fixed;
+  }
+p {
+  color: white;
+}
+
+  .container {
+
+    display: block;
+    
+    width: 100%;
+    height: min-content;
+    background-color: rgb(53, 45, 133);
+    opacity: 0.9;
+    
+  }
+  
+  .form-bg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    
+    
+  }
+
+  
+.form-bg h1 {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-family: 'lato', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.form-bg h3 {
+  margin: 0;
+  padding-top: o;
+  padding-bottom: 2px;
+  font-family: 'poppins', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: white;
+}
+  .form-bg table {
+    padding:10px;
+    margin-top: 20px;
+    margin-left: 320px;
+    width: 360px;
+    background-color: rgb(14, 14, 68);
+    fill-opacity: 1;
+    
+  }
+
+
+  input {
+    align: left;
+  }
+
+  .form-bg .block {
+    width: 100%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    text-align: center;
+  }
+  }

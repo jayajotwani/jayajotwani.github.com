@@ -1,0 +1,99 @@
+<!DOCTYPE html5>
+
+<html>
+    <head><title> Flexbox Assignment </title>
+    
+        <link href="SurveyAssg.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="container">
+        <div class="form-bg">
+            <h1>Assignment Survey Form </h1>
+            <h3>Thank you for taking the time to improve our platform</h3>
+            
+            <table>
+                <tr>
+                    <td>
+                        <form action="form.php" method="post">
+
+                        <p class="label">Name</p>
+                        <p><input type="text" size=80></p>
+                        
+                        <p class="label">Email</p>
+                        <p><input type="text" size=80></p>
+                        
+                        <p class="label">Age</p>
+                        <p><input type="text" size=80></p>
+                        
+                        <p class="label">Which option best describes your current role?</p>
+                        <p><input type="text" size=80></p>
+
+                        <p class="label">Would you recommend freeCodeCamp to a friend?</p>
+                        <p><input type="radio" id="definitely" name="recommend" value="definitely" checked />
+                        <label>Definitely</label>
+                        
+                        <p><input type="radio" name="recommend" value="maybe" />
+                            <label>Maybe</label>
+
+                        <p><input type="radio" name="recommend" value="notsure" />
+                                <label>Not Sure</label>
+                            
+                        <p class="label">What is your favorite feature of freeCodeCamp?</p>
+                        <p><input type="text"size=80></p>
+
+                        <p class="label">What would you like to see improved? (Check all that apply)</p>
+                        <p><input type="checkbox" id="feprojects" name="improve" value="feprojects" />
+                            <label>Front-end Projects</label>        
+                        
+                        <p><input type="checkbox" name="improve" value="beprojects" />
+                            <label>Back-end Projects</label>        
+                                
+                        <p><input type="checkbox" name="improve" value="datavisual" />
+                            <label>Data Visualization</label>        
+                        
+                        <p><input type="checkbox" name="improve" value="challenges" />
+                            <label>Challenges</label>        
+                        
+                        <p><input type="checkbox" name="improve" value="opensrccom" />
+                            <label>Open Source Community</label>
+
+                        <p><input type="checkbox" name="improve" value="ghelprooms" />
+                            <label>Gitter help rooms</label>            
+                                
+                        <p><input type="checkbox" name="improve" value="videos" />
+                            <label>Videos</label>
+
+                        <p><input type="checkbox" name="improve" value="citymeetups" />
+                            <label>City Meetups</label>  
+                                                    
+                        <p><input type="checkbox" name="improve" value="wiki" />
+                            <label>Wiki</label>        
+                        
+                        <p><input type="checkbox" name="improve" value="forum" />
+                            <label>Forum</label>                
+                        
+                        <p><input type="checkbox" name="improve" value="addcourses" />
+                            <label>Additional Courses</label>
+
+                        <p class="label">Any comments or suggestions?</p>
+                        <p><textarea rows=4 cols=75>Enter your comment here...</textarea></p>           
+                                
+                        <button class="block" type="submit" value="Save">Submit</button>
+                    
+                                
+                                
+                        </form>
+                    </td>
+                </tr>
+                
+            </table>
+            </form>
+        </div>
+        
+        
+        
+        </div>
+       
+    </body>
+</html>
