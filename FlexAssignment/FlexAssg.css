@@ -174,9 +174,9 @@ nav a:hover {
     display: flex;
     height: 150px;
     margin: 0;
+    padding-top: 120px;
     background-color: rgb(41, 41, 41);
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     
 }
 .Flex-contact div{
@@ -184,22 +184,20 @@ nav a:hover {
 }
 
 .Flex-contact .contact-greet {
-    
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-family: 'lato', sans-serif;
     font-size: 60px;
     font-weight: bold;
     color: white;
 }
 
 .Flex-contact .contact-tagline {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
     font-size: 20px;
     font-style: italic;
     word-spacing: 3px;
     color: white;
-    
-    
-    
 }
 
 .social-media {
@@ -207,8 +205,8 @@ nav a:hover {
     height: 100px;
     margin: 0;
     background-color: rgb(41, 41, 41);
-    padding-top: 10px;
-    padding-bottom: 50px;
+    
+    padding-bottom: 80px;
     justify-content: center;
     align-items: center;
     text-align: center;
