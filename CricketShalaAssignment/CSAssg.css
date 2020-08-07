@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Poppins:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&family=Roboto&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    display: flex;
+    height: 60px;
+    background-color: white;
+    margin: 0;
+    padding-right: 40px;
+    justify-content: space-between;
+}
+.logo img {
+    height: 35px;
+    padding: 10px;
+    margin-left: 25px;
+}
+
+nav a {
+    display: block;
+    float: left;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    margin-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav a:active {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 300px) {
+    .navigation {
+        display: block;
+        height: 400px;
+    }
+    nav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.lower-header {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    background-color: rgb(50, 100, 255);
+}
+
+.lower-header div {
+    text-align: center;
+}
+.lower-header .heading1 {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin: 20px;
+    padding: 0;
+}
+
+.lower-header .heading2 {
+    font-family: "Roboto";
+    font-size: 22px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.user-emailid {
+    margin: 0;
+    padding: 0;
+}
+
+.user-emailid input[type="email"] {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+    padding-left: 10px;
+    align: left;
+    width: 50%;
+    height: 40px;
+    border: none;
+    outline-color: cornflowerblue;
+    font-size: 16px;
+}
+
+.btn-improve {
+    background-color: rgb(247, 39, 39);
+    color: white;
+    border: none;
+    font-family: "raleway";
+    font-size: 14px;
+    padding: 12px;
+}
+
+.btn-improve:hover {
+    background-color: rgb(206, 22, 22);
+}
+
+.main-container {
+    display: block;
+    width: 100%;
+    justify-content: center;
+    background-color: silver;
+}
+
+.row-container {
+    display: flex;
+
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.image-container {
+    display: block;
+    justify-content: center;
+    float: left;
+    margin: 15px;
+    padding: 20px;
+    background-color: white;
+    width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.image-container p {
+    width: 100%;
+    float: none;
+}
+
+.caption1 {
+    font-family: "raleway";
+    font-size: 30px;
+    line-height: 40px;
+
+    margin-bottom: 0;
+}
+.caption1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.caption1 a:hover {
+    text-decoration: underline;
+}
+.caption2 {
+    font-family: "raleway";
+    margin-top: 5px;
+    font-size: 14px;
+    color: gray;
+}
+.caption2 a {
+    color: gray;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.caption2 a:hover {
+    color: black;
+}
+
+.caption3 {
+    font-family: "raleway";
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+    margin-top: 25px;
+}
+.btn-continue {
+    background-color: rgb(247, 39, 39);
+    color: white;
+    border: none;
+    font-family: "raleway";
+    font-size: 14px;
+    padding: 12px;
+}
+
+.btn-continue:hover {
+    background-color: rgb(206, 22, 22);
+}
+
+.review-comment {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.review-comment img {
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 5px;
+}
+
+.comments {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+.review-comment a {
+    font-family: "raleway";
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+    padding-top: 4px;
+}
+.review-comment a:hover {
+    color: black;
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+.footer-navigation a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .navigation {
+        display: block;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        margin: 0;
+        padding-right: 40px;
+    }
+    .logo img {
+        align-self: center;
+        height: 35px;
+        padding: 10px;
+        margin-left: 25px;
+    }
+    nav a {
+        float: none;
+        width: 100%;
+        display: block;
+        font-family: "Raleway", sans-serif;
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        margin-right: 0px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
