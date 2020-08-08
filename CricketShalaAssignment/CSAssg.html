@@ -6,6 +6,9 @@
 
         <link href="CSAssg.css" rel="stylesheet" />
         <link rel=”canonical” href=”https://www.cricketshala.com” />
+        <meta name="viewport" content="width=device-width, initial-width=1.0">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        
     </head>
 
     <body>
@@ -16,10 +19,13 @@
                 </div>
                 <div>
                     <nav>
+                        <button onclick="myFunction()"><i class='fas fa-bars'> MENU</i></button>
+                        <div id="menu-toggle">
                         <a href="">Home</a>
                         <a href="">Tips & Tactics</a>
                         <a href="">Product Reviews</a>
                         <a href="">Interviews & Bio</a>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -210,5 +216,18 @@
                 </nav>
             </div>
         </footer>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("menu-toggle");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+            </script>
+
     </body>
 </html>
+
