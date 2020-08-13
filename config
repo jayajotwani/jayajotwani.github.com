@@ -1,0 +1,10 @@
+Host github.com
+   HostName pratishruti08.github.com
+   User pratishruti08
+   IdentityFile /f/pratishruti/pratishruti08.github.io/pratishruti
+   
+# Work account-1
+Host github.com
+   HostName jayajotwani.github.com
+   User jayajotwani
+   IdentityFile /f/jaya/jayajotwani.github.io/jaya
