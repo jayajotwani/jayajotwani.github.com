@@ -233,6 +233,7 @@ button {
     flex-wrap: wrap;
     background-color: black;
     color: white;
+    padding: 20px;
 }
 
 .footer-navigation a {
@@ -266,6 +267,7 @@ button {
         float: none;
         width: 100%;
         justify-content: center;
+        margin: 0;
     }
     .btn-menu button {
         float: none;
