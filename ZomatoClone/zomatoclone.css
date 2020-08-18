@@ -1,18 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&family=Roboto&display=swap");
+
 body {
     margin: 0;
     padding: 0;
 }
 .head-container {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     width: 100%;
-    height: 100px;
+    height: 500px;
     background-image: url("images/food-background.jpg");
-    background-size: contain;
 }
-.head-title {
-    font-size: 50px;
+.header {
+    width: 100%;
+    height: 50px;
+}
+.user-photo img {
+    width: 50px;
+    border-radius: 50%;
 }
 i {
-    width: 100px;
+    float: left;
+    font-size: 50px;
+    color: black;
+}
+.title-container {
+    width: 100%;
+    height: 150px;
+    justify-items: center;
+    color: white;
+    font-weight: bolder;
+}
+.head-title {
+    width: 100%;
+    height: 100px;
+    justify-items: center;
+    font-family: "lato", sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.sub-title {
+    width: 100%;
+    font-family: "roboto", sans-serif;
+    font-size: 40px;
+    margin: 10px;
+}
+.city-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+.search-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: lighter;
+    color: gray;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+.qrcode {
+    width: 50px;
+    height: 50px;
+    background-color: white;
 }

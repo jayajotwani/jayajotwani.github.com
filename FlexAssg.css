@@ -42,7 +42,30 @@ nav a:hover {
     background-color: #627194;
 }
 
+.icon-bar {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    .icon-bar {
+        display: inline-block;
+        color: white;
+        font-size: 40px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .profile img {
+        display: none;
+        margin: 0;
+        height: 30px;
+    }
+}
+
 .Flex-Hero-Header {
+    width: 100%;
     display: flex;
     height: 500px;
     margin: 0;
@@ -90,7 +113,6 @@ nav a:hover {
 
 .gallery {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     padding-left: 30px;
     padding-right: 30px;
@@ -98,19 +120,16 @@ nav a:hover {
     align-items: center;
 }
 
-.gallery .group1 {
-    width: 100%;
-}
-
-.gallery img {
+.image-container img {
     width: 300px;
+    object-fit: contain;
     margin-bottom: 0px;
     margin-top: 10px;
 }
 .image-container {
     justify-content: center;
-    width: 25%;
-    height: fit-content
+    width: 300px;
+    height: fit-content;
     margin: 15px;
     padding: 20px;
 }
@@ -135,7 +154,6 @@ nav a:hover {
 }
 
 .show1 {
-
     color: black;
     transition: color 0.5s ease-in-out;
 }
@@ -155,7 +173,7 @@ nav a:hover {
     padding: 10px;
     margin-top: 40px;
     margin-bottom: 80px;
-    font-family: 'roboto', sans-serif;
+    font-family: "roboto", sans-serif;
     font-size: 20px;
     text-decoration: none;
     border-radius: 5px;

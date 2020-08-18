@@ -5,6 +5,27 @@
         <title>Jaya Jotwani's Profile</title>
 
         <link href="FlexAssg.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-width=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <script>
+            function shownav(){
+                var links = document.querySelector(".links");
+                var icon = document.querySelector(".icon-bar i");
+                if (links.style.display == "block"){
+                    links.style.display="none";
+                    icon.classList.remove("fa-close");
+                    icon.classList.add("fa-bars");
+                }
+                else{
+                    links.style.display="block";
+                    icon.classList.remove("fa-bars");
+                    icon.classList.add("fa-close");
+                }
+            }
+        </script>
     </head>
 
     <body>
@@ -14,11 +35,14 @@
                     <img src="images/profilecover1.png" />
                 </div>
                 <div>
-                    <nav>
+                    <nav class="links">
                         <a href="#">About</a>
                         <a href="#work">Work</a>
                         <a href="#contact">Contact</a>
                     </nav>
+                    <div class="icon-bar">
+                        <i class="fa fa-bars" onclick="shownav()"></i>
+                    </div>
                 </div>
             </div>
         </header>
