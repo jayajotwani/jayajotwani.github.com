@@ -4,64 +4,34 @@
 
 body {
     margin: 0;
-    padding: 0;
 }
-
-.profile-cover {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    height: 60px;
+header {
     background-color: red;
-    margin: 0;
-    /*padding: 5px;*/
+    width: auto;
+    color: white;
+    display: flex;
     justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: ;
 }
 .profile img {
-    margin: 0;
-    height: 60px;
-    /*width:100%*/
+    width: 200px;
+    margin: 10px;
 }
-
-nav a {
+.links a {
     color: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 26px;
-    text-decoration: none;
-    margin-right: 0px;
-    display: block;
-    /*height: 100%;*/
-    float: left;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 24px;
-    padding-right: 24px;
-}
 
-nav a:hover {
+    font-size: 25px;
+    text-decoration: none;
+    font-family: "roboto", sans-serif;
+    padding: 12px 20px 12px 20px;
+}
+.links a:hover {
     background-color: #627194;
 }
-
-.icon-bar {
+nav.icon {
     display: none;
-}
-
-@media (max-width: 600px) {
-    nav {
-        display: none;
-    }
-    .icon-bar {
-        display: inline-block;
-        color: white;
-        font-size: 40px;
-        margin-top: 10px;
-        margin-right: 20px;
-    }
-    .profile img {
-        display: none;
-        margin: 0;
-        height: 30px;
-    }
 }
 
 .Flex-Hero-Header {
@@ -113,6 +83,7 @@ nav a:hover {
 
 .gallery {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 30px;
     padding-right: 30px;
@@ -198,7 +169,7 @@ nav a:hover {
     margin: 0;
     padding-top: 120px;
     background-color: rgb(41, 41, 41);
-    justify-content: space-around;
+    justify-content: center;
 }
 .Flex-contact div {
     text-align: center;
@@ -232,18 +203,6 @@ nav a:hover {
     align-items: center;
     text-align: center;
 }
-
-/*.Flex-contact table {
-    margin-top: 40px;
-}
-
-.Flex-contact table td{
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 30px;
-    color: white;
-    align-items: center;    
-}*/
 
 .social-media a {
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -314,10 +273,10 @@ nav a:hover {
 }
 
 .call {
-    padding: 20px;
+    padding: 10px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
         "Lucida Sans", Arial, sans-serif;
-    font-size: 30px;
+    font-size: 15px;
     color: white;
 }
 
@@ -361,4 +320,74 @@ hr {
     font-size: 20px;
     color: white;
     align: center;
+}
+
+@media (max-width: 600px) {
+    nav.links {
+        display: none;
+    }
+    nav.icon {
+        display: block;
+        padding: 10px;
+    }
+    .links a {
+        font-size: 18px;
+        padding: 12px 10px 12px 10px;
+    }
+
+    .image-container img {
+        width: 90%;
+        object-fit: contain;
+    }
+    .image-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .image-caption p {
+        width: 90%;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .social-media img {
+        border-radius: 3px;
+        height: 15px;
+        padding-right: 3px;
+    }
+
+    .facebook {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .github {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .twitter {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .email {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .call {
+        padding: 10px;
+        font-size: 15px;
+    }
+    .social-media a {
+        font-size: 15px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    .Flex-contact .contact-greet {
+        font-size: 40px;
+    }
+    .Flex-contact .contact-tagline {
+        font-size: 12px;
+    }
 }

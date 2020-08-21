@@ -2,45 +2,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&family=Roboto&display=swap");
 
 body {
+    font-family: helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
-.head-container {
-    text-align: center;
+header {
+    padding: 20px;
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-image: url("images/food-background.jpg");
 }
-.header {
+.profile {
+    display: flex;
     width: 100%;
-    height: 50px;
+    height: 60px;
+}
+.user-photo {
 }
 .user-photo img {
+    position: absolute;
+    right: 60px;
     width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
-i {
+.QRcode {
+    position: absolute;
+    right: 10px;
+    font-size: 100px;
+    color: white;
+    border: none;
     float: left;
-    font-size: 50px;
-    color: black;
 }
+
 .title-container {
     width: 100%;
-    height: 150px;
-    justify-items: center;
+    justify-content: center;
     color: white;
     font-weight: bolder;
 }
 .head-title {
     width: 100%;
-    height: 100px;
-    justify-items: center;
+    text-align: center;
     font-family: "lato", sans-serif;
     font-size: 50px;
     font-weight: bolder;
+    margin-top: 40px;
 }
 .sub-title {
     width: 100%;
+    text-align: center;
     font-family: "roboto", sans-serif;
     font-size: 40px;
     margin: 10px;
@@ -70,8 +81,178 @@ i {
     text-align: left;
     border-radius: 10px;
 }
-.qrcode {
-    width: 50px;
+.safe-dining {
+    justify-content: left;
+    justify-self: center;
+    height: 300px;
+    color: white;
+    margin: 5%;
+    background-image: url("images/safedining.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+.intro {
+    width: 100%;
     height: 50px;
+    font-size: 50px;
+    padding: 15px;
+}
+.contactless {
+    display: flex;
+    width: 40%;
+    height: 70px;
+    font-size: 30px;
+}
+.contactless img {
+    width: 60px;
+}
+
+.cap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.safe-caption1 {
+    font-size: 20px;
+}
+
+.safe-caption2 {
+    font-size: 35px;
+}
+.safe-caption3 {
+    width: 100%;
+    font-size: 50px;
+}
+
+.coll {
+    display: flex;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
     background-color: white;
+    margin: 5%;
+}
+.image-container {
+    width: 30%;
+    justify-content: center;
+    border: 0 1px 1px 1px;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 15px;
+}
+.image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+.image-caption {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+}
+.coll {
+    display: flex;
+    justify-content: space-between;
+}
+.coll-heading {
+    font-size: 30px;
+    color: rgb(54, 54, 54);
+    margin: 0;
+}
+
+.coll-description {
+    font-size: 17px;
+    color: rgb(54, 54, 54);
+    margin: 0;
+}
+
+.coll a {
+    color: rgb(236, 70, 84);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.collections {
+    width: 90%;
+    margin: 5%;
+}
+
+.coll-images {
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    border: 2px orangered;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.coll i {
+    justify-content: center;
+    align-items: center;
+    color: rgb(236, 70, 84);
+}
+.coll-images1 {
+    background-image: url("images/collection1.jpg");
+    height: 100%;
+    background-position: center;
+    width: 20%;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.coll-images2 {
+    background-image: url("images/collection2.jpg");
+    height: 100%;
+    background-position: center;
+    width: 20%;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.coll-images3 {
+    background-image: url("images/collection3.jpg");
+    height: 100%;
+    background-position: center;
+    width: 20%;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.coll-images4 {
+    background-image: url("images/collection4.jpg");
+    height: 100%;
+    background-position: center;
+    width: 20%;
+    background-size: cover;
+    border-radius: 7px;
+}
+
+.title {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(54, 54, 54);
+}
+
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.places div {
+    display: flex;
+    width: 25%;
+    height: 50px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    box-shadow: 0 1px lightgrey;
 }
