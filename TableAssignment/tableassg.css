@@ -101,6 +101,9 @@
 .error {
     color: rgb(189, 25, 25);
 }
+.sw-warning {
+    color: orange;
+}
 @@ -95,14 +105,14 @@
 .fvu-table th {
     border-bottom: 1px solid lightgray;
