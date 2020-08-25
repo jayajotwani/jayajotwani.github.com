@@ -1,7 +1,7 @@
 .container {
-    margin: 100px;
     height: 800px;
     width: 800px;
+    margin: auto;
     background-color: pink;
     border: 5px double black;
     display: flex;
@@ -67,7 +67,7 @@
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 30px solid #d66f51;
-    top: 664px;
+    top: 571px;
 }
 .pot2 {
     width: 150px;
@@ -76,13 +76,13 @@
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 150px solid #ff7043;
-    top: 690px;
+    top: 600px;
 }
 .leaf-right {
     width: 50px;
     height: 0px;
     position: absolute;
-    top: 470px;
+    top: 370px;
     border-left: 20px solid rgb(20, 201, 147);
     border-top: 50px solid rgb(20, 201, 147);
     border-bottom: 50px solid rgb(20, 201, 147);
@@ -96,7 +96,7 @@
     width: 50px;
     height: 0px;
     position: absolute;
-    top: 400px;
+    top: 300px;
     border-left: 20px solid rgb(20, 201, 147);
     border-top: 50px solid rgb(20, 201, 147);
     border-bottom: 50px solid rgb(20, 201, 147);
