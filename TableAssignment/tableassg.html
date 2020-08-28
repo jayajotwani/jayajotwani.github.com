@@ -8,81 +8,205 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <script>
+            function challan() {
+                var a = document.getElementById("challan-div");
+                var b = document.getElementById("tds-div");
+                var c = document.getElementById("fvu-div");
+                var d = document.getElementById("etds-div");
+                var a1 = document.getElementById("challan-color");
+                var b1 = document.getElementById("tds-color");
+                var c1 = document.getElementById("fvu-color");
+                var d1 = document.getElementById("etds-color");
+                var x = document.getElementById("table-fvu");
+
+                a.style.display = "block";
+
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "none";
+                a1.style.background = "lightgray";
+                b1.style.background = "#f5f5f5";
+                c1.style.background = "#f5f5f5";
+                d1.style.background = "#f5f5f5";
+                x.style.display = "none";
+            }
+            function tds() {
+                var a = document.getElementById("challan-div");
+                var a1 = document.getElementById("tds-color");
+                var b = document.getElementById("tds-div");
+                var c = document.getElementById("fvu-div");
+                var d = document.getElementById("etds-div");
+
+                var a1 = document.getElementById("challan-color");
+                var b1 = document.getElementById("tds-color");
+                var c1 = document.getElementById("fvu-color");
+                var d1 = document.getElementById("etds-color");
+                var x = document.getElementById("table-fvu");
+
+                a.style.display = "none";
+                b.style.display = "block";
+                c.style.display = "none";
+                d.style.display = "none";
+
+                a1.style.background = "#f5f5f5";
+                b1.style.background = "lightgray";
+                c1.style.background = "#f5f5f5";
+                d1.style.background = "#f5f5f5";
+                x.style.display = "none";
+            }
+            function fvu() {
+                var a = document.getElementById("challan-div");
+                var b = document.getElementById("tds-div");
+                var c = document.getElementById("fvu-div");
+                var d = document.getElementById("etds-div");
+
+                var a1 = document.getElementById("challan-color");
+                var b1 = document.getElementById("tds-color");
+                var c1 = document.getElementById("fvu-color");
+                var d1 = document.getElementById("etds-color");
+                var x = document.getElementById("table-fvu");
+
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "block";
+                d.style.display = "none";
+
+                a1.style.background = "#f5f5f5";
+                b1.style.background = "#f5f5f5";
+                c1.style.background = "lightgray";
+                d1.style.background = "#f5f5f5";
+                x.style.display = "block";
+            }
+            function etds() {
+                var a = document.getElementById("challan-div");
+                var b = document.getElementById("tds-div");
+                var c = document.getElementById("fvu-div");
+                var d = document.getElementById("etds-div");
+
+                var a1 = document.getElementById("challan-color");
+                var b1 = document.getElementById("tds-color");
+                var c1 = document.getElementById("fvu-color");
+                var d1 = document.getElementById("etds-color");
+                var x = document.getElementById("table-fvu");
+
+                a.style.display = "none";
+                b.style.display = "none";
+                c.style.display = "none";
+                d.style.display = "block";
+
+                a1.style.background = "#f5f5f5";
+                b1.style.background = "#f5f5f5";
+                c1.style.background = "#f5f5f5";
+                d1.style.background = "lightgray";
+                x.style.display = "none";
+            }
+        </script>
     </head>
 
     <body>
-        <div class="main-container">
-            <header class="header">
-                <div class="challan">
-                    <div class="circle">
-                        <i class="fa fa-minus"></i>
+        <div class="full-container">
+            <header>
+                <div class="logo">
+                    <div><img src="images/logo.JPG" /></div>
+                    <div class="company-name">
+                        <div class="title">XYZ</div>
+                        <div class="subtitle">SOFTWARE</div>
                     </div>
-                    <div>Challan & Deductions</div>
                 </div>
-                - - -
-                <div class="tds">
-                    <div class="circle">
-                        <i class="fa fa-rupee"></i>
+                <div class="user">
+                    <div class="bell">
+                        <i class="fa fa-bell" data-count="5"></i>
                     </div>
-                    TDS Computation
-                </div>
-                - - -
-                <div class="fvu">
-                    <div class="circle">
-                        <i class="fa fa-info"></i>
+                    <div class="user-details">
+                        <div class="user-icon"><i class="fa fa-user"></i></div>
+                        <div class="user-name">Saloni Jain</div>
+                        <div class="caret">
+                            <i class="fa fa-caret-down"></i>
+                        </div>
                     </div>
-                    FVU Generation
                 </div>
-                - - -
-                <div class="etds">
-                    <div class="circle">
-                        <i class="fa fa-file"></i>
-                    </div>
-                    eTDS Filling
-                </div>
-                <a href="">Return Overview</a>
             </header>
-            <div class="fvu-table">
-                FVU Generation
-                <table>
-                    <tr>
-                        <th>Section/Record Type</th>
-                        <th>Field Name</th>
-                        <th>Error type</th>
-                        <th>Error Code & Description</th>
-                        <th>View & fix Error</th>
-                    </tr>
-                    <tr>
-                        <td>Challan</td>
-                        <td>Bank Challan number</td>
-                        <td class="error">Error as per FVU</td>
-                        <td>Challan number 12345 is not valid</td>
-                        <td><i class="fa fa-eye"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Deducted</td>
-                        <td>PAN</td>
-                        <td class="sw-warning">Software warning</td>
-                        <td>Unverified PAN information</td>
-                        <td><i class="fa fa-eye"></i></td>
-                    </tr>
-                    <tr>
-                        <td>Challan</td>
-                        <td>Bank Challan Number</td>
-                        <td class="sw-warning">Software warning</td>
-                        <td>Unverified Challan details available</td>
-                        <td><i class="fa fa-eye"></i></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="buttons">
-                <button type="button" id="validate">Validate Again</button>
-                <button type="button" id="download">
-                    Download FVU File
-                </button>
-                <button type="button" id="proceed">
-                    Proceed to eTDS Filling
-                </button>
+            <div class="main-container">
+                <div class="header">
+                    <div
+                        class="challan"
+                        onclick="challan();"
+                        id="challan-color"
+                    >
+                        <div class="circle">
+                            <i class="fa fa-minus"></i>
+                        </div>
+                        Challan & Deductions
+                    </div>
+                    - - -
+                    <div class="tds" onclick="tds();" id="tds-color">
+                        <div class="circle">
+                            <i class="fa fa-rupee"></i>
+                        </div>
+                        TDS Computation
+                    </div>
+                    - - -
+                    <div class="fvu" onclick="fvu();" id="fvu-color">
+                        <div class="circle">
+                            <i class="fa fa-info"></i>
+                        </div>
+                        FVU Generation
+                    </div>
+                    - - -
+                    <div class="etds" onclick="etds();" id="etds-color">
+                        <div class="circle">
+                            <i class="fa fa-file"></i>
+                        </div>
+                        eTDS Filling
+                    </div>
+                    <a href="">Return Overview</a>
+                </div>
+                <div class="fvu-table">
+                    <div id="challan-div">Challan and Deductions</div>
+                    <div id="tds-div">TDS Computation</div>
+                    <div id="fvu-div">FVU Generation</div>
+                    <div id="etds-div">eTDS Filling</div>
+                    <table id="table-fvu">
+                        <tr>
+                            <th>Section/Record Type</th>
+                            <th>Field Name</th>
+                            <th>Error type</th>
+                            <th>Error Code & Description</th>
+                            <th>View & fix Error</th>
+                        </tr>
+                        <tr>
+                            <td>Challan</td>
+                            <td>Bank Challan number</td>
+                            <td class="error">Error as per FVU</td>
+                            <td>Challan number 12345 is not valid</td>
+                            <td><i class="fa fa-eye"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Deducted</td>
+                            <td>PAN</td>
+                            <td class="sw-warning">Software warning</td>
+                            <td>Unverified PAN information</td>
+                            <td><i class="fa fa-eye"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Challan</td>
+                            <td>Bank Challan Number</td>
+                            <td class="sw-warning">Software warning</td>
+                            <td>Unverified Challan details available</td>
+                            <td><i class="fa fa-eye"></i></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="buttons">
+                    <button type="button" id="validate">Validate Again</button>
+                    <button type="button" id="download">
+                        Download FVU File
+                    </button>
+                    <button type="button" id="proceed">
+                        Proceed to eTDS Filling
+                    </button>
+                </div>
             </div>
         </div>
     </body>

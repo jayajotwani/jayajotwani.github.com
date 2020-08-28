@@ -1,6 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,100&family=Roboto&display=swap");
 
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    box-shadow: 0px 0px 5px 0px rgb(238, 235, 235);
+    margin-bottom: 40px;
+    font-family: "raleway", sans-serif;
+    padding: 0 230px 0 230px;
+}
+.logo {
+    display: flex;
+}
+.company-name {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 5px;
+}
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+}
+.subtitle {
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+}
+.bell {
+    margin-right: 20px;
+    font-size: 18px;
+}
+.user-icon {
+    font-size: 16px;
+    margin-right: 5px;
+}
+.user-name {
+    margin-right: 5px;
+}
+.user {
+    display: flex;
+    margin-right: 10px;
+}
+
+.user-details {
+    display: flex;
+}
+
 .main-container {
     border: 1px solid lightgray;
     border-radius: 15px 15px 0 0;
@@ -10,19 +63,13 @@
     justify-content: center;
     width: 900px;
     margin: auto;
-    overflow: auto;
 }
-/*@media (max-width: 900px) {
-    .main-container {
-        width: 100%;
+@media screen (max-width: 900px) {
+    body {
+        overflow: auto;
     }
-    .challan,
-    .tds,
-    .fvu,
-    .etds {
-        font-size: 12px;
-    }
-}*/
+}
+
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -80,11 +127,26 @@
 }
 
 .fvu-table {
+    font-size: 20px;
     font-weight: bold;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 40px;
+}
+.fvu-table #challan-div {
+    display: none;
+}
+.fvu-table #tds-div {
+    display: none;
+}
+.fvu-table #fvu-div {
+    display: none;
+}
+.fvu-table #etds-div {
+    display: none;
 }
 .fvu-table table {
+    display: none;
     border-collapse: collapse;
     background-color: #fbfbfb;
     text-align: center;
@@ -117,17 +179,19 @@
 .fvu-table tr:last-child {
     border-bottom: 0;
 }
-.fvu-table tr th:last-child {
+.fvu-table th:last-child {
     border-right: 0;
 }
-.fvu-table tr td:last-child {
+.fvu-table td:last-child {
     border-right: 0;
 }
 
 .buttons {
     display: flex;
+
     justify-content: flex-end;
     margin-bottom: 20px;
+    padding-right: 15px;
 }
 .buttons button {
     justify-self: center;
