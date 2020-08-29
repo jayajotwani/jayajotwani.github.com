@@ -4,19 +4,23 @@
 body {
     margin: 0;
     padding: 0;
+    width: 1360px;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
+
     box-shadow: 0px 0px 5px 0px rgb(238, 235, 235);
     margin-bottom: 40px;
     font-family: "raleway", sans-serif;
-    padding: 0 230px 0 230px;
 }
+
 .logo {
     display: flex;
+    margin-left: 230px;
 }
 .company-name {
     display: flex;
@@ -34,9 +38,17 @@ header {
     font-weight: bold;
     color: red;
 }
+
+.user {
+    display: flex;
+    margin-right: 230px;
+}
 .bell {
     margin-right: 20px;
     font-size: 18px;
+}
+.user-details {
+    display: flex;
 }
 .user-icon {
     font-size: 16px;
@@ -44,14 +56,6 @@ header {
 }
 .user-name {
     margin-right: 5px;
-}
-.user {
-    display: flex;
-    margin-right: 10px;
-}
-
-.user-details {
-    display: flex;
 }
 
 .main-container {
@@ -65,7 +69,7 @@ header {
     margin: auto;
 }
 @media screen (max-width: 900px) {
-    body {
+    .main-container {
         overflow: auto;
     }
 }
@@ -73,7 +77,6 @@ header {
 .header {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     height: 32px;
     justify-content: center;
     align-items: center;

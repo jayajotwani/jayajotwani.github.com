@@ -105,108 +105,101 @@
     </head>
 
     <body>
-        <div class="full-container">
-            <header>
-                <div class="logo">
-                    <div><img src="images/logo.JPG" /></div>
-                    <div class="company-name">
-                        <div class="title">XYZ</div>
-                        <div class="subtitle">SOFTWARE</div>
-                    </div>
+        <header>
+            <div class="logo">
+                <div><img src="images/logo.JPG" /></div>
+                <div class="company-name">
+                    <div class="title">XYZ</div>
+                    <div class="subtitle">SOFTWARE</div>
                 </div>
-                <div class="user">
-                    <div class="bell">
-                        <i class="fa fa-bell" data-count="5"></i>
-                    </div>
-                    <div class="user-details">
-                        <div class="user-icon"><i class="fa fa-user"></i></div>
-                        <div class="user-name">Saloni Jain</div>
-                        <div class="caret">
-                            <i class="fa fa-caret-down"></i>
-                        </div>
-                    </div>
+            </div>
+            <div class="user">
+                <div class="bell">
+                    <i class="fa fa-bell" data-count="5"></i>
                 </div>
-            </header>
-            <div class="main-container">
-                <div class="header">
-                    <div
-                        class="challan"
-                        onclick="challan();"
-                        id="challan-color"
-                    >
-                        <div class="circle">
-                            <i class="fa fa-minus"></i>
-                        </div>
-                        Challan & Deductions
-                    </div>
-                    - - -
-                    <div class="tds" onclick="tds();" id="tds-color">
-                        <div class="circle">
-                            <i class="fa fa-rupee"></i>
-                        </div>
-                        TDS Computation
-                    </div>
-                    - - -
-                    <div class="fvu" onclick="fvu();" id="fvu-color">
-                        <div class="circle">
-                            <i class="fa fa-info"></i>
-                        </div>
-                        FVU Generation
-                    </div>
-                    - - -
-                    <div class="etds" onclick="etds();" id="etds-color">
-                        <div class="circle">
-                            <i class="fa fa-file"></i>
-                        </div>
-                        eTDS Filling
-                    </div>
-                    <a href="">Return Overview</a>
+
+                <div class="user-icon">
+                    <i class="fa fa-user"></i>
                 </div>
-                <div class="fvu-table">
-                    <div id="challan-div">Challan and Deductions</div>
-                    <div id="tds-div">TDS Computation</div>
-                    <div id="fvu-div">FVU Generation</div>
-                    <div id="etds-div">eTDS Filling</div>
-                    <table id="table-fvu">
-                        <tr>
-                            <th>Section/Record Type</th>
-                            <th>Field Name</th>
-                            <th>Error type</th>
-                            <th>Error Code & Description</th>
-                            <th>View & fix Error</th>
-                        </tr>
-                        <tr>
-                            <td>Challan</td>
-                            <td>Bank Challan number</td>
-                            <td class="error">Error as per FVU</td>
-                            <td>Challan number 12345 is not valid</td>
-                            <td><i class="fa fa-eye"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Deducted</td>
-                            <td>PAN</td>
-                            <td class="sw-warning">Software warning</td>
-                            <td>Unverified PAN information</td>
-                            <td><i class="fa fa-eye"></i></td>
-                        </tr>
-                        <tr>
-                            <td>Challan</td>
-                            <td>Bank Challan Number</td>
-                            <td class="sw-warning">Software warning</td>
-                            <td>Unverified Challan details available</td>
-                            <td><i class="fa fa-eye"></i></td>
-                        </tr>
-                    </table>
+                <div class="user-name">Saloni Jain</div>
+                <div class="caret">
+                    <i class="fa fa-caret-down"></i>
                 </div>
-                <div class="buttons">
-                    <button type="button" id="validate">Validate Again</button>
-                    <button type="button" id="download">
-                        Download FVU File
-                    </button>
-                    <button type="button" id="proceed">
-                        Proceed to eTDS Filling
-                    </button>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="header">
+                <div class="challan" onclick="challan();" id="challan-color">
+                    <div class="circle">
+                        <i class="fa fa-minus"></i>
+                    </div>
+                    Challan & Deductions
                 </div>
+                - - -
+                <div class="tds" onclick="tds();" id="tds-color">
+                    <div class="circle">
+                        <i class="fa fa-rupee"></i>
+                    </div>
+                    TDS Computation
+                </div>
+                - - -
+                <div class="fvu" onclick="fvu();" id="fvu-color">
+                    <div class="circle">
+                        <i class="fa fa-info"></i>
+                    </div>
+                    FVU Generation
+                </div>
+                - - -
+                <div class="etds" onclick="etds();" id="etds-color">
+                    <div class="circle">
+                        <i class="fa fa-file"></i>
+                    </div>
+                    eTDS Filling
+                </div>
+                <a href="">Return Overview</a>
+            </div>
+            <div class="fvu-table">
+                <div id="challan-div">Challan and Deductions</div>
+                <div id="tds-div">TDS Computation</div>
+                <div id="fvu-div">FVU Generation</div>
+                <div id="etds-div">eTDS Filling</div>
+                <table id="table-fvu">
+                    <tr>
+                        <th>Section/Record Type</th>
+                        <th>Field Name</th>
+                        <th>Error type</th>
+                        <th>Error Code & Description</th>
+                        <th>View & fix Error</th>
+                    </tr>
+                    <tr>
+                        <td>Challan</td>
+                        <td>Bank Challan number</td>
+                        <td class="error">Error as per FVU</td>
+                        <td>Challan number 12345 is not valid</td>
+                        <td><i class="fa fa-eye"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Deducted</td>
+                        <td>PAN</td>
+                        <td class="sw-warning">Software warning</td>
+                        <td>Unverified PAN information</td>
+                        <td><i class="fa fa-eye"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Challan</td>
+                        <td>Bank Challan Number</td>
+                        <td class="sw-warning">Software warning</td>
+                        <td>Unverified Challan details available</td>
+                        <td><i class="fa fa-eye"></i></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="buttons">
+                <button type="button" id="validate">Validate Again</button>
+                <button type="button" id="download">Download FVU File</button>
+                <button type="button" id="proceed">
+                    Proceed to eTDS Filling
+                </button>
             </div>
         </div>
     </body>
