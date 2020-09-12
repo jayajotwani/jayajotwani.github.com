@@ -1,0 +1,165 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>DroNa Clone</title>
+        <link style="text/css" rel="stylesheet" href="DronaClone.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <meta name="robots" content="noindex" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script>
+            function translate1() {
+                var lang = document.getElementById("language1").value;
+
+                var english = document.getElementById("english-div");
+                var english1 = document.getElementById("english-div1");
+                var hindi = document.getElementById("hindi-div");
+                var hindi1 = document.getElementById("hindi-div1");
+                var gujarati = document.getElementById("gujarati-div");
+                var gujarati1 = document.getElementById("gujarati-div1");
+                var bengali = document.getElementById("bengali-div");
+                var bengali1 = document.getElementById("bengali-div1");
+
+                if (lang == "english") {
+                    english.style.display = "flex";
+                    hindi.style.display = "none";
+                    gujarati.style.display = "none";
+                    bengali.style.display = "none";
+                    english1.style.display = "flex";
+                    hindi1.style.display = "none";
+                    gujarati1.style.display = "none";
+                    bengali1.style.display = "none";
+                }
+                if (lang == "hindi") {
+                    hindi.style.display = "flex";
+                    english.style.display = "none";
+                    gujarati.style.display = "none";
+                    bengali.style.display = "none";
+                    hindi1.style.display = "flex";
+                    english1.style.display = "none";
+                    gujarati1.style.display = "none";
+                    bengali1.style.display = "none";
+                }
+
+                if (lang == "gujarati") {
+                    gujarati.style.display = "flex";
+                    english.style.display = "none";
+                    hindi.style.display = "none";
+                    bengali.style.display = "none";
+                    gujarati1.style.display = "flex";
+                    english1.style.display = "none";
+                    hindi1.style.display = "none";
+                    bengali1.style.display = "none";
+                }
+
+                if (lang == "bengali") {
+                    bengali.style.display = "flex";
+                    english.style.display = "none";
+                    gujarati.style.display = "none";
+                    hindi.style.display = "none";
+                    bengali1.style.display = "flex";
+                    english1.style.display = "none";
+                    gujarati1.style.display = "none";
+                    gujarati1.style.display = "none";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img
+                    src="https://app.dronahealth.co.in/rweb/assets/dronahealth/images/logo.svg"
+                />
+            </div>
+            <div class="language">
+                <form>
+                    <select id="language1" onchange="translate1();">
+                        <option value="english">English</option>
+                        <option value="hindi">हिन्दी</option>
+                        <option value="gujarati">ગુજરાતી</option>
+                        <option value="bengali">বাংলা</option>
+                    </select>
+                </form>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="upper-main">
+                <div class="welcome">Welcome to</div>
+                <div class="title">Dr. Piyush Test. sharma's eClinic</div>
+                <div class="subtitle">
+                    Start booking your appointment with Dr. Piyush Test. sharma
+                    now!
+                </div>
+                <div class="banner">
+                    <img
+                        src="https://app.dronahealth.co.in/arogya/v1.0/images/doctors/iovuqpdpjhdnzezptllfcut.jpg"
+                    />
+                </div>
+            </div>
+            <div class="lower-main">
+                <div class="doctor-details">
+                    <div class="doctor-name">Dr. Piyush Test. sharma</div>
+                    <div id="english-div">
+                        <div>Gender</div>
+                        <div>Speciality</div>
+                    </div>
+                    <div id="hindi-div">
+                        <div>लिंग</div>
+                        <div>विशेषता</div>
+                    </div>
+
+                    <div id="gujarati-div">
+                        <div>લિંગ</div>
+                        <div>વિશેષતા</div>
+                    </div>
+                    <div id="bengali-div">
+                        <div>লিঙ্গ</div>
+                        <div>বিষেশজ্ঞ</div>
+                    </div>
+
+                    <div class="doctor-detail-line2-4">
+                        <div>Male</div>
+                        <div>Internal Medicine</div>
+                    </div>
+
+                    <div id="english-div1">
+                        <div>Locality</div>
+                        <div>Registration No.</div>
+                    </div>
+
+                    <div id="hindi-div1">
+                        <div>स्थान</div>
+                        <div>पंजीकरण क्रमांक</div>
+                    </div>
+
+                    <div id="gujarati-div1">
+                        <div>સ્થાન</div>
+                        <div>રજિસ્ટ્રેશન નંબર</div>
+                    </div>
+
+                    <div id="bengali-div1">
+                        <div>এরিয়া</div>
+                        <div>রেজিস্ট্রেশন নম্বর.</div>
+                    </div>
+                    <div class="doctor-detail-line2-4">
+                        <div>Delhi</div>
+                        <div>Fdd</div>
+                    </div>
+                </div>
+                <div class="appointment">
+                    <button
+                        type="submit"
+                        value="appointment"
+                        class="appointment-button"
+                    >
+                        Book an appointment
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
