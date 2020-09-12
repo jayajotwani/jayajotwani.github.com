@@ -1,0 +1,31 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Multiplication Table</title>
+        <script>
+            function table() {
+                var n = document.getElementById("num").value;
+                alert(n);
+                var i, j;
+                document.write(
+                    "<h1>Multiplication Table of " + n + "</h1><br />"
+                );
+                for (i = 1; i <= 10; i++) {
+                    j = n * i;
+                    document.write(n + " X " + i + " = " + j + "<br />");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Multiplication Table</h1>
+        <br />
+        <form>
+            <lable for="num">Enter a number for displaying its table</lable>
+            <input type="number" value="num" id="num" />
+            <button type="submit" value="multiply" onclick="table();">
+                Display Table
+            </button>
+        </form>
+    </body>
+</html>
