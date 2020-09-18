@@ -153,6 +153,7 @@ form {
     outline-color: lightblue;
     border-radius: 5px;
     border: none;
+    text-decoration: none;
 }
 .appointment-button:hover {
     background-color: #e18e00;
@@ -163,4 +164,9 @@ form {
 }
 .appointment i {
     margin-left: 8px;
+}
+
+.appointment-button a {
+    text-decoration: none;
+    color: white;
 }

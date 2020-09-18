@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;400&display=swap");
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "public sans", sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+
+    margin-bottom: 5px;
+}
+form {
+    margin: 0;
+}
+.language select {
+    color: purple;
+    border: none;
+    outline: none;
+    padding: 0px;
+    margin: 0;
+    font-size: 15px;
+}
+.language {
+    text-align: center;
+    width: fit-content;
+    padding: 3px;
+    color: purple;
+    border: 2px solid purple;
+    border-radius: 10px;
+}
+
+.main {
+    margin: auto;
+    background-color: #f7f7f7;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.appointment-block {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    background-color: white;
+}
+
+.eclinic {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.dr-details {
+    font-size: 18px;
+    color: #575757;
+    font-weight: 200;
+}
+
+.Book-an-appointment {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 700;
+}
+.consultation-mode {
+    padding: 15px;
+    width: 30%;
+}
+.select {
+    font-size: 14px;
+    color: #575757;
+    font-weight: 400;
+}
+.select-option {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.video-call {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    font-weight: 600;
+    padding: 15px;
+    font-size: 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.phone-call {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    font-weight: 600;
+    padding: 15px;
+    font-size: 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.select-date {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border: 1px solid #ffffff;
+    width: 95%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+    background-color: white;
+}
+
+.timings {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.time-table {
+    display: inline-block;
+    text-align: center;
+    justify-items: center;
+    width: 16%;
+    height: 20px;
+    color: rgb(130, 130, 130);
+    line-height: 40px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 50px;
+    margin: 5px;
+    background: #ffffff;
+    font-weight: 500;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.book-appointment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    border-radius: 5px;
+}
+
+.book-appointment-button {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #cccccc;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+}
