@@ -1,0 +1,39 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Odd or Even Number</title>
+        <script>
+            function odd() {
+                var num = document.getElementById("number").value;
+                var even;
+                even = num % 2;
+
+                if (even == 1) {
+                    document.write(
+                        "<h1> This no. is odd " + num + "</h1><br />"
+                    );
+                } else {
+                    document.write(
+                        "<h1> This no. is even" + num + "</h1><br />"
+                    );
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h3>Javascript Assignment - Find the no is odd or even</h3>
+            <br />
+            <form>
+                <label for="number">
+                    Enter a number to find, its odd or even
+                </label>
+                <input type="number" value="number" id="number" />
+
+                <button type="submit" value="multiply" onclick="odd();">
+                    Display no. is even or odd
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

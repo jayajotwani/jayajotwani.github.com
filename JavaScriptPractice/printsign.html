@@ -1,0 +1,40 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Sign of Product</title>
+        <script>
+            function printsign() {
+                var firstnum = document.getElementById("num1").value;
+                var secondnum = document.getElementById("num2").value;
+                var thirdnum = document.getElementById("num3").value;
+                var product = firstnum*secondnum*thirdnum;
+                if(product >= 0){
+                    document.write("<h1>Sign of product: +</h1><br />");
+                }
+                else{
+                    document.write("<h1>Sign of product: -</h1><br />");
+                }
+            }
+        </script>
+
+ <body>
+        <div>
+            <h3>Javascript Assignment - Sign of product of 3 numbers</h3>
+            <br />
+            <form>
+                <label for="num1">Enter First Number</label>
+                <input type="number" value="num1" id="num1" />
+
+                <label for="num2">Enter Second Number</label>
+                <input type="number" value="num2" id="num2" />
+
+                <label for="num3">Enter Second Number</label>
+                <input type="number" value="num3" id="num3" />
+
+                <button type="submit" value="sign" onclick="printsign();">
+                    Find the Sign
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

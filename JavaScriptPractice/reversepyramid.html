@@ -1,0 +1,33 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Javascript Assignment</title>
+        <script>
+            function revpyramid() {
+                var row = document.getElementById("rows").value;
+                var i, j;
+                for (i = row; i >= 1; i--) {
+                    for (j = 1; j <= i; j++) {
+                        document.write("* ");
+                    }
+                    document.write("<br />");
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div>
+            <h3>Reverse Pyramid</h3>
+            <br />
+            <form>
+                <label for="number">Give the no of rows of Pyramid </label>
+                <input type="number" value="rows" id="rows" />
+
+                <button type="submit" value="multiply" onclick="revpyramid();">
+                    Display Pyramid
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

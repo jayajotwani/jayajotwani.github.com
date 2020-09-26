@@ -1,0 +1,43 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Find Largets of 5 numbers</title>
+        <script>
+            function largestnumber() {
+                var numbers = [8, 7, 2, 9, 3];
+                var i, j, largest;
+
+                for (let i = 0; i <= numbers.length - 1; i++) {
+                    for (let j = i + 1; j <= numbers.length - 1; j++) {
+                        if (numbers[i] >= numbers[j]) {
+                            largest = numbers[i];
+                        } else {
+                            largest = numbers[j];
+                        }
+                    }
+                }
+                document.write(
+                    "<h3>The largest number is: " + largest + "</h3>"
+                );
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h3>Find Largets of 5 numbers</h3>
+            <br />
+            <form>
+                <h4>
+                    Find the largest of the following numbers: 8, 7, 2, 9, 3;
+                </h4>
+                <button
+                    type="submit"
+                    value="largest"
+                    onclick="largestnumber();"
+                >
+                    Find largest number
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Odd or Even Number</title>
+        <script>
+            function evenodd() {
+                var even;
+
+                for (let i = 0; i <= 15; i++) {
+                    even = i % 2;
+                    if (even == 1) {
+                        document.write("<h4>" + i + " is Odd </h4>");
+                    } else {
+                        document.write("<h4>" + i + " is Even </h4>");
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h3>Javascript Assignment - Find the no is odd or even</h3>
+            <br />
+            <form>
+                <button type="submit" value="multiply" onclick="evenodd();">
+                    Display no. is even or odd
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

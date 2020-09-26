@@ -1,0 +1,53 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Find Largets of 5 numbers</title>
+        <script>
+            function studentdetails() {
+                var students = [
+                    {
+                        name: "Rakesh",
+                        age: 38,
+                        profession: "Software engineer",
+                    },
+                    {
+                        name: "yash",
+                        age: 13,
+                        profession: "student",
+                    },
+                    {
+                        name: "shruti",
+                        age: 23,
+                        profession: "web developer",
+                    },
+                ];
+                var i, j;
+                for (let i = 0; i <= students.length - 1; i++) {
+                    document.write(
+                        "<h3><u>Details of student-" + (i + 1) + "</u></h3>"
+                    );
+                    document.write(
+                        "<h4>Name: " + students[i].name + "</h4>",
+                        "<h4>Age: " + students[i].age + "</h4>",
+                        "<h4>Profession: " + students[i].profession + "</h4>"
+                    );
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h3>Print Array of Objects</h3>
+            <br />
+            <form>
+                <button
+                    type="submit"
+                    value="numbers"
+                    onclick="studentdetails();"
+                >
+                    Print Student Details
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

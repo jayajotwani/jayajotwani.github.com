@@ -1,0 +1,32 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Javascript Assignment - Triangle Area</title>
+        <script>
+            function area() {
+                var h = document.getElementById("height").value;
+                var l = document.getElementById("length").value;
+                var area;
+                area = (h * l) / 2;
+                document.write("<h1>Area of triangle:- " + area + "</h1><br />");
+            }
+        </script>
+
+ <body>
+        <div>
+            <h3>Javascript Assignment - Area of triangle</h3>
+            <br />
+            <form>
+                <label for="height">Enter the height of Triangle</label>
+                <input type="number" value="height" id="height" />
+
+                <label for="length">Enter the length of Triangle</label>
+                <input type="number" value="length" id="length" />
+
+                <button type="submit" value="multiply" onclick="area();">
+                    Display area of Triangle
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

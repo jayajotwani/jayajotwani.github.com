@@ -1,0 +1,33 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title></title>
+        <script>
+            function pyramid() {
+                var row = document.getElementById("row").value;
+
+                var i, j;
+                for (i = 1; i <= row; ++i) {
+                    for (j = 1; j <= i; ++j) {
+                        document.write("* ");
+                    }
+                    document.write("<br />");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h3>Javascript Assignment - Pyramid of *s</h3>
+            <br />
+            <form>
+                <label for="number">Give the no of rows of Pyramid </label>
+                <input type="number" value="row" id="row" />
+
+                <button type="submit" value="multiply" onclick="pyramid();">
+                    Display Pyramid
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

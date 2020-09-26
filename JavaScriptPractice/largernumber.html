@@ -1,0 +1,48 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Larger of two numbers</title>
+        <script>
+            function larger1() {
+                var firstnum = document.getElementById("num1").value;
+                var secondnum = document.getElementById("num2").value;
+                var larger1;
+                if(firstnum > secondnum){
+                    larger1=firstnum;
+                    console.log(larger1);
+                    document.write("<h1>"+firstnum +" is larger than " +secondnum+"</h1><br />");
+                }
+                else{
+                    larger1=secondnum;
+                    console.log(larger1);
+                    document.write("<h1>"+secondnum +" is larger than " +firstnum+"</h1><br />");
+                }
+                /*if(secondnum == firstnum){
+                    document.write("<h1> Both numbers are equal</h1><br />");
+                    
+                }
+                else{
+                    
+                }
+                }*/
+            }
+        </script>
+
+ <body>
+        <div>
+            <h3>Javascript Assignment - Larger of two numbers</h3>
+            <br />
+            <form>
+                <label for="num1">Enter First Number</label>
+                <input type="number" value="num1" id="num1" />
+
+                <label for="num2">Enter Second Number</label>
+                <input type="number" value="num2" id="num2" />
+
+                <button type="submit" value="larger" onclick="larger1();">
+                    Find Larger Number
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

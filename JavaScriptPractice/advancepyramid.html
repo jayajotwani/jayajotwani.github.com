@@ -1,0 +1,50 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Javascript Assignment</title>
+        <script>
+            function fullpyramid() {
+                var rows1 = document.getElementById("rows1").value;
+                var i, j, k;
+
+                for (let i = 1; i <= rows1; i++) {
+                    let str = "";
+
+                    //Add the white space to the left
+                    for (let k = 1; k <= rows1 - i; k++) {
+                        document.write("&nbsp");
+                    }
+
+                    //Add the '*' for each row
+                    for (let j = 0; j != 2 * i - 1; j++) {
+                        document.write("*");
+                    }
+                    document.write("<br/>");
+                }
+                for (i = rows1 - 1; i >= 1; i--) {
+                    for (k = rows1 - i; k >= 1; k--) {
+                        document.write("&nbsp");
+                    }
+                    for (j = 1; j <= i; j++) {
+                        document.write("*");
+                    }
+                    document.write("<br/>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h3>full Pyramid</h3>
+            <br />
+            <form>
+                <label for="number">Give the no of rows of Pyramid </label>
+                <input type="number" value="rows1" id="rows1" />
+
+                <button type="submit" value="multiply" onclick="fullpyramid();">
+                    Display Full Pyramid
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

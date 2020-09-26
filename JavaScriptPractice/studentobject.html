@@ -1,0 +1,42 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Find Largets of 5 numbers</title>
+        <script>
+            function numberofstudents() {
+                alert("hello");
+                var numbers = document.getElementById("num").value;
+                var i, j, largest;
+                alert(numbers);
+                for (let i = 0; i <= numbers.length - 1; i++) {
+                    document.write(
+                        "<h3>Enter details of student-" + (i + 1) + "</h3>"
+                    );
+                    /*document.write(
+                        "<label for=""number""> Enter number of students </label>"*/
+                    /*"<input type=""number"" value=""num"" id=""num"" />"*/
+                    /* );*/
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h3>Print Array of Objects</h3>
+            <br />
+            <form>
+                <h4>
+                    <label for="number"> Enter number of students </label>
+                    <input type="number" value="num" id="num" />
+                </h4>
+                <button
+                    type="submit"
+                    value="numbers"
+                    onclick="numberofstudents();"
+                >
+                    Find largest number
+                </button>
+            </form>
+        </div>
+    </body>
+</html>

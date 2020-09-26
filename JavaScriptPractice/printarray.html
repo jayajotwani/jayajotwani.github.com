@@ -1,0 +1,40 @@
+<!DOCTYPE html5>
+<html>
+    <head>
+        <title>Javascript Assignment</title>
+        <script>
+            function printarray() {
+                var students = ["naitik", "Shruti", "yash", "Rakesh", "Pooja"];
+                var i, firstletter;
+
+                for (let i = 0; i <= students.length - 1; i++) {
+                    students[i] =
+                        students[i].charAt(0).toUpperCase() +
+                        students[i].substr(1);
+
+                    document.write(students[i]);
+                    document.write("<br/>");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h3>Print Array</h3>
+            <br />
+            <form>
+                <h4>
+                    print the following array: <br />var students = ['naitik',
+                    'Shruti', 'yash', 'Rakesh', 'Pooja'];
+                </h4>
+                <button
+                    type="submit"
+                    value="printarray"
+                    onclick="printarray();"
+                >
+                    Print Array
+                </button>
+            </form>
+        </div>
+    </body>
+</html>
