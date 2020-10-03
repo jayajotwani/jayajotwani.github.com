@@ -4,9 +4,12 @@
         <title>Larger of two numbers</title>
         <script>
             function larger1() {
-                var firstnum = document.getElementById("num1").value;
-                var secondnum = document.getElementById("num2").value;
+                var firstnum = parseInt(document.getElementById("num1").value);
+                var secondnum = parseInt(document.getElementById("num2").value);
                 var larger1;
+                document.write(
+                "<h3>Question: </h3><h4>Write a JavaScript program that accept two integers and display the larger.</h4>"
+            );
                 if(firstnum > secondnum){
                     larger1=firstnum;
                     console.log(larger1);
@@ -17,14 +20,11 @@
                     console.log(larger1);
                     document.write("<h1>"+secondnum +" is larger than " +firstnum+"</h1><br />");
                 }
-                /*if(secondnum == firstnum){
-                    document.write("<h1> Both numbers are equal</h1><br />");
-                    
-                }
-                else{
-                    
-                }
-                }*/
+                document.write(
+                "<img src=",
+                "images/larger.jpeg",
+                " width=300px />"
+            );
             }
         </script>
 

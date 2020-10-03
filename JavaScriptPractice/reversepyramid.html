@@ -6,12 +6,20 @@
             function revpyramid() {
                 var row = document.getElementById("rows").value;
                 var i, j;
+                document.write(
+                    "<h3>Question: </h3><h4>Write a function that prints a reverse pyramid of *s</h4>"
+                );
                 for (i = row; i >= 1; i--) {
                     for (j = 1; j <= i; j++) {
                         document.write("* ");
                     }
                     document.write("<br />");
                 }
+                document.write(
+                    "<img src=",
+                    "images/rev_pyramid.jpeg",
+                    " width=300px />"
+                );
             }
         </script>
     </head>

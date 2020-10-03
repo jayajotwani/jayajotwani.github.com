@@ -7,16 +7,20 @@
                 var num = document.getElementById("number").value;
                 var even;
                 even = num % 2;
+                document.write(
+                    "<h3>Question: </h3><h4>Create a function to check number is odd or even</h4>"
+                );
 
                 if (even == 1) {
-                    document.write(
-                        "<h1> This no. is odd " + num + "</h1><br />"
-                    );
+                    document.write("<h1>" + num + " is odd</h1><br />");
                 } else {
-                    document.write(
-                        "<h1> This no. is even" + num + "</h1><br />"
-                    );
+                    document.write("<h1>" + num + " is even</h1><br />");
                 }
+                document.write(
+                    "<img src=",
+                    "images/odd_even.jpeg",
+                    " width=300px />"
+                );
             }
         </script>
     </head>
@@ -26,7 +30,7 @@
             <br />
             <form>
                 <label for="number">
-                    Enter a number to find, its odd or even
+                    Enter a number to find whether it is odd or even
                 </label>
                 <input type="number" value="number" id="number" />
 
