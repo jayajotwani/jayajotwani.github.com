@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Stack OverFlow Clone</title>
-        <link style="text/css" rel="stylesheet" href="stackclone.css" />
+        <link type="text/css" rel="stylesheet" href="stackclone.css" />
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -33,6 +33,30 @@
                 </a>
             </div>
         </header>
+
+        
+        <div class="header-small">
+            <div class="menu"><i class="fa fa-bars"></i></div>
+            <div class="logo">
+                <a href="https://stackoverflow.com/"><img src="images/footer-logo.png" /></a>
+            </div>
+            <nav>
+                <a href=""><button type="button"  class="products" value="products" id="products">Products</button></a></div>
+            </nav>
+            <div class="search-container">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="login-wrap">
+                <a href="">
+                    <button type="button" class="login" value="login" id="login">Log in</button>
+                </a>
+            </div>
+            <div class="signup-wrap">
+                <a href="">
+                    <button type="button" class="signup" value="signup" id="signup">Sign up</button>
+                </a>
+            </div>
+        </div>
 
         <section class="main-banner">
             <div class="title-container">
@@ -127,6 +151,11 @@
                     answer format is a proven approach for accessing the right information in less time</p></div>
                  <button type="button" value="learn-more-btn" id="learn-more-btn">Learn more</button>
             </div>
+            
+            <div class="teams-most-used">
+                MOST USED
+                <i class="fa fa-building"></i>
+            </div>
             <div class="teams-banner-container">
                 <div class="teams-banner teams-basic">
                     <div class="basic">Basic</div>
@@ -142,10 +171,9 @@
                         <p class="basic-line6"><i class='fa fa-archive'></i>Fully searchable archive</p>
                     </div>
                     <div class="teams-banner-btn">
-                        <button type="button" value="teams-basic-btn" id="teams-basic-btn">Browse Question</button>
+                        <button type="button" value="teams-basic-btn" id="teams-basic-btn">Get started for free</button>
                     </div>                  
                 </div>
-
                 <div class="teams-banner teams-business">
                     <div class="Business">Business</div>                    
                     <p class="business-line1">Private knowledge base with SSO and premium features
@@ -159,7 +187,7 @@
                     <p class="business-line7"><i class='fa fa-star'></i>99.5% uptime</p>
                     <p class="business-line8"><i class='fa fa-plus'></i>All the features of Basic tier</p>
                     <div class="teams-banner-btn">
-                        <button type="button" value="teams-business-btn" id="teams-business-btn">Browse Question</button>
+                        <button type="button" value="teams-business-btn" id="teams-business-btn">Get started</button>
                     </div>
                 </div>
                 
@@ -176,7 +204,7 @@
                     <p class="Enterprise-line7"><i class='fa fa-user'></i>Your own customer success and community building representative</p>
                     <p class="Enterprise-line8"><i class='fa fa-star'></i>99.5% uptime SLA and priority support</p>
                     <div class="teams-banner-btn">
-                        <button type="button" value="teams-enterprise-btn" id="teams-enterprise-btn">Browse Question</button>
+                        <button type="button" value="teams-enterprise-btn" id="teams-enterprise-btn">Request a demo</button>
                     </div>
                 </div>               
             </div>
@@ -222,33 +250,38 @@
             <div class="qa-title">Questions are everywhere, answers are on Stack Overflow</div>
             <div class="animation-container">
                 <div class="left-animation">
-                    <div class="animate-left">
+                    <div class="animate-left ask">
                         <img src="https://cdn.sstatic.net/Img/home/ask-a-question.svg" />
                         <p>Ask a question</p>
-                        <p class="arrow">&gt;</p>
+                        
                     </div>
-                    <div class="animate-left">
+                    <div class="animate-left vote">
                         <img src="https://cdn.sstatic.net/Img/home/votes.svg" />
                         <p>Vote on everything</p>
                     </div>
-                    <div class="animate-left">
+                    <div class="animate-left answer">
                         <img src="https://cdn.sstatic.net/Img/home/answer.svg" />
                         <p>Answer questions</p>
                     </div>
                 </div>
                 <div class="middle-animation">
-                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg" />
+                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg" class="ask-img"/>
+                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-vote.svg" class="vote-img" />
+                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-answer.svg" class="answer-img" />
+                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-tags.svg" class="tags-img" />
+                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-accept.svg" class="accept-img" />
+                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-recognize.svg" class="recognize-img" />
                 </div>
-                <div class="right-animation">
+                <div class="right-animation tags">
                     <div class="animate-right">
                         <img src="https://cdn.sstatic.net/Img/home/tags.svg" />
                         <p>Tag your question</p>
                     </div>
-                    <div class="animate-right">
+                    <div class="animate-right accept">
                         <img src="https://cdn.sstatic.net/Img/home/accept.svg" />
                         <p>Accept an answer</p>
                     </div>
-                    <div class="animate-right">
+                    <div class="animate-right recognize">
                         <img src="https://cdn.sstatic.net/Img/home/get-recognized.svg" />
                         <p>Get recognized</p>
                     </div>
@@ -349,21 +382,21 @@
             </div>
             <div class="footer-menu">
                 <a href=""><div class="footer-title"><h5>STACK EXCHANGE NETWORK</h5></div></a>
-                <a href=""><p>Technology</p>
-                    <div class="GT-icon">&gt;</div>
+                <a href=""><div class="footer-menu-stack"><p>Technology</p>
+                    <div class="GT-icon">&gt;</div></div>
                 </a>
-                <a href=""><p>Life / Arts</p>
+                <a href=""><div class="footer-menu-stack"><p>Life / Arts</p>
                     <div class="GT-icon">&gt;</div>
-                </a>
-                <a href=""><p>Culture /Recreation</p>
+                </div></a>
+                <a href=""><div class="footer-menu-stack"><p>Culture /Recreation</p>
                     <div class="GT-icon">&gt;</div>
-                </a>
-                <a href=""><p>Science</p>
+                </div></a>
+                <a href=""><div class="footer-menu-stack"><p>Science</p>
                     <div class="GT-icon">&gt;</div>
-                </a>
-                <a href=""><p>Other</p>
+                </div></a>
+                <a href=""><div class="footer-menu-stack"><p>Other</p>
                     <div class="GT-icon">&gt;</div>
-                </a>
+                </div></a>
             </div>
             <div class="socialmedia-copyright-container">
                 <div class="socialmedia-container">
