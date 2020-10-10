@@ -7,6 +7,21 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event){
+                document.getElementById("leftParentElement")
+                .addEventListener("click", function clickMethod(event){
+                    var newImage=event.target.getAttribute("img");
+                    document.getElementById("displayImage").setAttribute("src", newImage);
+                });
+                document.getElementById("rightParentElement")
+                .addEventListener("click", function clickMethod(event){
+                    var newImage=event.target.getAttribute("img");
+                    document.getElementById("displayImage").setAttribute("src", newImage);
+                });
+            });
+        </script>
     </head>
     <body>
         <header>
@@ -41,9 +56,9 @@
                 <a href="https://stackoverflow.com/"><img src="images/footer-logo.png" /></a>
             </div>
             <nav>
-                <a href=""><button type="button"  class="products" value="products" id="products">Products</button></a></div>
+                <a href=""><button type="button"  class="products" value="products" id="products">Products</button></a>
             </nav>
-            <div class="search-container">
+            <div class="search-icon">
                 <i class="fa fa-search"></i>
             </div>
             <div class="login-wrap">
@@ -249,39 +264,37 @@
         <section class="question-answers-container">
             <div class="qa-title">Questions are everywhere, answers are on Stack Overflow</div>
             <div class="animation-container">
-                <div class="left-animation">
-                    <div class="animate-left ask">
+                <div class="left-animation" id="leftParentElement">
+                    <div class="animate-left ask" img="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg">
                         <img src="https://cdn.sstatic.net/Img/home/ask-a-question.svg" />
                         <p>Ask a question</p>
                         
                     </div>
-                    <div class="animate-left vote">
+                    <div class="animate-left vote" img="https://cdn.sstatic.net/Img/home/illo-feats-vote.svg">
+
                         <img src="https://cdn.sstatic.net/Img/home/votes.svg" />
                         <p>Vote on everything</p>
+                        
                     </div>
-                    <div class="animate-left answer">
+                    <div class="animate-left answer" img="https://cdn.sstatic.net/Img/home/illo-feats-answer.svg">
                         <img src="https://cdn.sstatic.net/Img/home/answer.svg" />
                         <p>Answer questions</p>
                     </div>
                 </div>
                 <div class="middle-animation">
-                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg" class="ask-img"/>
-                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-vote.svg" class="vote-img" />
-                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-answer.svg" class="answer-img" />
-                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-tags.svg" class="tags-img" />
-                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-accept.svg" class="accept-img" />
-                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-recognize.svg" class="recognize-img" />
+                    <img src="https://cdn.sstatic.net/Img/home/illo-feats-ask.svg" id="displayImage" class="ask-img"/>
+                    
                 </div>
-                <div class="right-animation tags">
-                    <div class="animate-right">
+                <div class="right-animation"  id="rightParentElement">
+                    <div class="animate-right  tags" img="https://cdn.sstatic.net/Img/home/illo-feats-tags.svg">
                         <img src="https://cdn.sstatic.net/Img/home/tags.svg" />
                         <p>Tag your question</p>
                     </div>
-                    <div class="animate-right accept">
+                    <div class="animate-right accept" img="https://cdn.sstatic.net/Img/home/illo-feats-accept.svg">
                         <img src="https://cdn.sstatic.net/Img/home/accept.svg" />
                         <p>Accept an answer</p>
                     </div>
-                    <div class="animate-right recognize">
+                    <div class="animate-right recognize" img="https://cdn.sstatic.net/Img/home/illo-feats-recognize.svg">
                         <img src="https://cdn.sstatic.net/Img/home/get-recognized.svg" />
                         <p>Get recognized</p>
                     </div>

@@ -22,8 +22,8 @@ header {
     display: none;
     align-content: center;
     align-items: center;
-    width: 100%;
-    height: 47px;
+    height: 0;
+    width: 0;
     background-color: #fafafb;
     border-top: 3px solid rgb(255, 123, 0);
     border-bottom: 1px solid darkgray;
@@ -31,16 +31,7 @@ header {
     position: fixed;
     padding: auto 50px auto 50px;
 }
-@media screen and (max-width: 600px) {
-    header {
-        display: none;
-        height: 0;
-        width: 0;
-    }
-    .header-small {
-        display: flex;
-    }
-}
+
 .menu {
     display: flex;
     align-items: center;
@@ -1154,4 +1145,100 @@ footer {
     display: flex;
     font-size: 10px;
     width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        display: none;
+        width: 100%;
+        height: 0;
+        width: 0;
+    }
+    .header-small {
+        display: flex;
+
+        width: 100%;
+        height: 47px;
+    }
+    nav {
+        width: 4%;
+        margin-right: 5px;
+    }
+    .products {
+        font-size: 11px;
+    }
+    .search-container {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        width: 20px;
+        height: 27px;
+        margin-left: 20px;
+        padding-left: 5px;
+    }
+    .menu i {
+        font-size: 15px;
+        color: grey;
+        margin-right: 0;
+    }
+    .logo img {
+        background-color: transparent;
+        height: 30px;
+        margin: 0;
+    }
+    .login {
+        height: 24px;
+        font-size: 11px;
+        color: #39739d;
+        background-color: #e1ecf4;
+        border-radius: 3px;
+        border: 1px solid #7aa7c7;
+        outline: none;
+        margin: 2px;
+        margin-left: 10px;
+        margin-right: 5px;
+        padding: 0px 8px;
+    }
+    .signup {
+        height: 24px;
+        font-size: 11px;
+        color: #fff;
+        background-color: #0095ff;
+        border-radius: 3px;
+        border: 1px solid #7aa7c7;
+        outline: none;
+        margin: 0px;
+        padding: 0px 8px;
+    }
+    .main-banner {
+        background: url("https://cdn.sstatic.net/Img/home/illo-hero-small.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #ffcf10;
+        width: 100%;
+    }
+    .title-container {
+        width: 90%;
+        height: 200px;
+        margin-top: 120px;
+    }
+    .title {
+        font-size: 20px;
+        font-weight: 1200;
+    }
+    .subtitle {
+        width: 80%;
+        font-size: 13px;
+    }
+
+    .category-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .businesses {
+        margin-top: 10px;
+    }
 }
