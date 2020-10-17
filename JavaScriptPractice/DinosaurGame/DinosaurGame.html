@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dinosaur Game</title>
+        <script src="dinogame.js" ></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            .game-container{
+                position: relative;
+                width: 80%;
+                height:500px;
+                margin:auto;
+                border-bottom: 1px solid black;
+            }
+            #dino{
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                background-color:green;
+                bottom: 0;
+            }
+            #cactus{
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                background-color: red;
+                bottom: 0;
+                left:1000px;
+            }
+            #score{
+                position: absolute;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                color: white;
+                background-color: blue;
+                right:150px;
+                
+            }
+            #gameStart{
+                display: block;
+                text-align: center;
+                position: absolute;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                color: white;
+                background-color: blue;
+                left:400px;
+                
+            }
+            #gameEnd{
+                
+                display: none;
+                text-align: center;
+                position: absolute;
+                width: 100px;
+                height: 50px;
+                text-align: center;
+                color: white;
+                background-color: blue;
+                left:150px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="game-container">
+            <div id="gameStart">START</div>
+            <div id="gameEnd">Game Over</div>
+            <div id="score">0000</div>
+            
+            <div id="dino"></div>
+            <div id="cactus"></div>
+        </div>
+    </body>
+</html>
